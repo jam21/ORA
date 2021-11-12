@@ -1,0 +1,31 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  check_list_id: 1
+  area_id: 1
+  seq_number: 1
+  check_list_description: MyString
+  min_value: 1
+  max_value: 1
+  unit_of_measure: MyString
+  cerated_by: 1
+  creation_date: 2019-09-04 12:31:12
+  last_updated_by: 1
+  last_update_date: 2019-09-04 12:31:12
+  last_sync_date: 2019-09-04 12:31:12
+  end_date: 2019-09-04 12:31:12
+
+two:
+  check_list_id: 1
+  area_id: 1
+  seq_number: 1
+  check_list_description: MyString
+  min_value: 1
+  max_value: 1
+  unit_of_measure: MyString
+  cerated_by: 1
+  creation_date: 2019-09-04 12:31:12
+  last_updated_by: 1
+  last_update_date: 2019-09-04 12:31:12
+  last_sync_date: 2019-09-04 12:31:12
+  end_date: 2019-09-04 12:31:12

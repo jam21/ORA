@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nfc_id: 1
+  area_id: 1
+  nfc_tag_value: MyString
+  nfc_age: 1
+  remarks: MyString
+  cerated_by: 1
+  creation_date: 2019-09-04 12:15:26
+  last_updated_by: 1
+  last_update_date: 2019-09-04 12:15:26
+  last_sync_date: 2019-09-04 12:15:26
+  end_date: 2019-09-04 12:15:26
+
+two:
+  nfc_id: 1
+  area_id: 1
+  nfc_tag_value: MyString
+  nfc_age: 1
+  remarks: MyString
+  cerated_by: 1
+  creation_date: 2019-09-04 12:15:26
+  last_updated_by: 1
+  last_update_date: 2019-09-04 12:15:26
+  last_sync_date: 2019-09-04 12:15:26
+  end_date: 2019-09-04 12:15:26

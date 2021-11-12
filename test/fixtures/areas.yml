@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  plant_id: 1
+  area_id: 1
+  area_title: MyString
+  parent_area_id: 1
+  cerated_by: 1
+  creation_date: 2019-09-04 12:11:08
+  last_updated_by: 1
+  last_update_date: 2019-09-04 12:11:08
+  last_login_date: 2019-09-04 12:11:08
+  last_sync_date: 2019-09-04 12:11:08
+  end_date: 2019-09-04 12:11:08
+
+two:
+  plant_id: 1
+  area_id: 1
+  area_title: MyString
+  parent_area_id: 1
+  cerated_by: 1
+  creation_date: 2019-09-04 12:11:08
+  last_updated_by: 1
+  last_update_date: 2019-09-04 12:11:08
+  last_login_date: 2019-09-04 12:11:08
+  last_sync_date: 2019-09-04 12:11:08
+  end_date: 2019-09-04 12:11:08

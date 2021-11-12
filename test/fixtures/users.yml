@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  user_name: MyString
+  user_pin: 1
+  plant_id: 1
+  cerated_by: 1
+  creation_date: 2019-09-04 11:55:28
+  last_updated_by: 1
+  last_update_date: 2019-09-04 11:55:28
+  last_login_date: 2019-09-04 11:55:28
+  last_sync_date: 2019-09-04 11:55:28
+  end_date: 2019-09-04 11:55:28
+
+two:
+  user_id: 1
+  user_name: MyString
+  user_pin: 1
+  plant_id: 1
+  cerated_by: 1
+  creation_date: 2019-09-04 11:55:28
+  last_updated_by: 1
+  last_update_date: 2019-09-04 11:55:28
+  last_login_date: 2019-09-04 11:55:28
+  last_sync_date: 2019-09-04 11:55:28
+  end_date: 2019-09-04 11:55:28

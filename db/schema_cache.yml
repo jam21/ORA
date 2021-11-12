@@ -1,0 +1,2597 @@
+--- !ruby/object:ActiveRecord::ConnectionAdapters::SchemaCache
+columns:
+  ar_internal_metadata:
+  - &138 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: key
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &1 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: VARCHAR2(255)
+        type: :string
+        limit: 255
+        precision: 
+        scale: 
+      type_metadata: *1
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &139 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: value
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &2 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: VARCHAR2(255)
+        type: :string
+        limit: 255
+        precision: 
+        scale: 
+      type_metadata: *2
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &140 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: created_at
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &3 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: TIMESTAMP(6)
+        type: :datetime
+        limit: 
+        precision: 6
+        scale: 
+      type_metadata: *3
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &141 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: updated_at
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &4 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: TIMESTAMP(6)
+        type: :datetime
+        limit: 
+        precision: 6
+        scale: 
+      type_metadata: *4
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  cust_ora_areas_t:
+  - &142 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: area_id
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &5 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *5
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &143 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: plant_id
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &6 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *6
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &144 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: area_name
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &7 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: VARCHAR2(25)
+        type: :string
+        limit: 25
+        precision: 
+        scale: 
+      type_metadata: *7
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &145 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: parent_area_id
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &8 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *8
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &146 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: created_by
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &9 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *9
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &147 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: creation_date
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &10 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: TIMESTAMP(6)
+        type: :datetime
+        limit: 
+        precision: 6
+        scale: 
+      type_metadata: *10
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &148 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: last_updated_by
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &11 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *11
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &149 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: last_update_date
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &12 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: TIMESTAMP(6)
+        type: :datetime
+        limit: 
+        precision: 6
+        scale: 
+      type_metadata: *12
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &150 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: last_update_login
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &13 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *13
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &151 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: end_date
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &14 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: TIMESTAMP(6)
+        type: :datetime
+        limit: 
+        precision: 6
+        scale: 
+      type_metadata: *14
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  cust_ora_asset_log_details_t:
+  - &152 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: log_id
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &15 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *15
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &153 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: log_header_id
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &16 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *16
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &154 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: asset_id
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &17 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *17
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &155 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: current_value
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &18 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER
+        type: :decimal
+        limit: 
+        precision: 
+        scale: 
+      type_metadata: *18
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &156 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: mwr_required
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &19 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(1)
+        type: :boolean
+        limit: 
+        precision: 
+        scale: 
+      type_metadata: *19
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &157 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: mwr_justification
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &20 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: VARCHAR2(255)
+        type: :string
+        limit: 255
+        precision: 
+        scale: 
+      type_metadata: *20
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &158 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: remarks
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &21 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: VARCHAR2(255)
+        type: :string
+        limit: 255
+        precision: 
+        scale: 
+      type_metadata: *21
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &159 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: created_by
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &22 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *22
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &160 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: creation_date
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &23 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: TIMESTAMP(6)
+        type: :datetime
+        limit: 
+        precision: 6
+        scale: 
+      type_metadata: *23
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &161 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: last_updated_by
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &24 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *24
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &162 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: last_update_date
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &25 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: TIMESTAMP(6)
+        type: :datetime
+        limit: 
+        precision: 6
+        scale: 
+      type_metadata: *25
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &163 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: last_update_login
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &26 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *26
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  cust_ora_asset_log_headers_t:
+  - &164 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: log_header_id
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &27 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *27
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &165 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: area_id
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &28 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *28
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &166 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: shift
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &29 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: VARCHAR2(25)
+        type: :string
+        limit: 25
+        precision: 
+        scale: 
+      type_metadata: *29
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &167 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: comments
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &30 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: VARCHAR2(2000)
+        type: :string
+        limit: 2000
+        precision: 
+        scale: 
+      type_metadata: *30
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &168 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: comments_01
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &31 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: VARCHAR2(2000)
+        type: :string
+        limit: 2000
+        precision: 
+        scale: 
+      type_metadata: *31
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &169 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: log_required
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &32 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(1)
+        type: :boolean
+        limit: 
+        precision: 
+        scale: 
+      type_metadata: *32
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &170 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: log_date
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &33 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: TIMESTAMP(6)
+        type: :datetime
+        limit: 
+        precision: 6
+        scale: 
+      type_metadata: *33
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &171 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: latitude
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &34 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER
+        type: :decimal
+        limit: 
+        precision: 
+        scale: 
+      type_metadata: *34
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &172 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: longitude
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &35 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER
+        type: :decimal
+        limit: 
+        precision: 
+        scale: 
+      type_metadata: *35
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &173 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: created_by
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &36 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *36
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &174 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: creation_date
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &37 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: TIMESTAMP(6)
+        type: :datetime
+        limit: 
+        precision: 6
+        scale: 
+      type_metadata: *37
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &175 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: last_updated_by
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &38 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *38
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &176 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: last_update_date
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &39 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: TIMESTAMP(6)
+        type: :datetime
+        limit: 
+        precision: 6
+        scale: 
+      type_metadata: *39
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &177 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: last_update_login
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &40 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *40
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  cust_ora_assets_t:
+  - &178 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: asset_id
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &41 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *41
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &179 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: area_id
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &42 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *42
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &180 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: seq_number
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &43 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *43
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &181 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: eam_asset_number
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &44 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: VARCHAR2(30)
+        type: :string
+        limit: 30
+        precision: 
+        scale: 
+      type_metadata: *44
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &182 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: asset_tag
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &45 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: VARCHAR2(25)
+        type: :string
+        limit: 25
+        precision: 
+        scale: 
+      type_metadata: *45
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &183 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: asset_description
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &46 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: VARCHAR2(100)
+        type: :string
+        limit: 100
+        precision: 
+        scale: 
+      type_metadata: *46
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &184 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: min_value
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &47 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER
+        type: :decimal
+        limit: 
+        precision: 
+        scale: 
+      type_metadata: *47
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &185 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: max_value
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &48 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER
+        type: :decimal
+        limit: 
+        precision: 
+        scale: 
+      type_metadata: *48
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &186 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: unit_of_measure
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &49 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: VARCHAR2(25)
+        type: :string
+        limit: 25
+        precision: 
+        scale: 
+      type_metadata: *49
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &187 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: is_boolean
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &50 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(1)
+        type: :boolean
+        limit: 
+        precision: 
+        scale: 
+      type_metadata: *50
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &188 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: remarks
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &51 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: VARCHAR2(255)
+        type: :string
+        limit: 255
+        precision: 
+        scale: 
+      type_metadata: *51
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &189 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: created_by
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &52 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *52
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &190 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: creation_date
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &53 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: TIMESTAMP(6)
+        type: :datetime
+        limit: 
+        precision: 6
+        scale: 
+      type_metadata: *53
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &191 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: last_updated_by
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &54 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *54
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &192 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: last_update_date
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &55 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: TIMESTAMP(6)
+        type: :datetime
+        limit: 
+        precision: 6
+        scale: 
+      type_metadata: *55
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &193 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: last_update_login
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &56 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *56
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &194 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: end_date
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &57 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: TIMESTAMP(6)
+        type: :datetime
+        limit: 
+        precision: 6
+        scale: 
+      type_metadata: *57
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  cust_ora_checklists_t:
+  - &195 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: checklist_id
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &58 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *58
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &196 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: area_id
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &59 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *59
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &197 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: seq_number
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &60 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *60
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &198 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: check_list_description
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &61 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: VARCHAR2(100)
+        type: :string
+        limit: 100
+        precision: 
+        scale: 
+      type_metadata: *61
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &199 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: min_value
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &62 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER
+        type: :decimal
+        limit: 
+        precision: 
+        scale: 
+      type_metadata: *62
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &200 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: max_value
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &63 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER
+        type: :decimal
+        limit: 
+        precision: 
+        scale: 
+      type_metadata: *63
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &201 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: unit_of_measure
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &64 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: VARCHAR2(25)
+        type: :string
+        limit: 25
+        precision: 
+        scale: 
+      type_metadata: *64
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &202 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: is_boolean
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &65 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(1)
+        type: :boolean
+        limit: 
+        precision: 
+        scale: 
+      type_metadata: *65
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &203 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: remarks
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &66 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: VARCHAR2(255)
+        type: :string
+        limit: 255
+        precision: 
+        scale: 
+      type_metadata: *66
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &204 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: created_by
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &67 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *67
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &205 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: creation_date
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &68 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: TIMESTAMP(6)
+        type: :datetime
+        limit: 
+        precision: 6
+        scale: 
+      type_metadata: *68
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &206 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: last_updated_by
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &69 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *69
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &207 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: last_update_date
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &70 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: TIMESTAMP(6)
+        type: :datetime
+        limit: 
+        precision: 6
+        scale: 
+      type_metadata: *70
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &208 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: last_update_login
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &71 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *71
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &209 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: end_date
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &72 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: TIMESTAMP(6)
+        type: :datetime
+        limit: 
+        precision: 6
+        scale: 
+      type_metadata: *72
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  cust_ora_cklist_log_details_t:
+  - &210 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: cklist_log_id
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &73 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *73
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &211 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: cklist_log_header_id
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &74 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *74
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &212 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: checklist_id
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &75 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *75
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &213 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: current_value
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &76 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER
+        type: :decimal
+        limit: 
+        precision: 
+        scale: 
+      type_metadata: *76
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &214 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: created_by
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &77 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *77
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &215 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: creation_date
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &78 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: TIMESTAMP(6)
+        type: :datetime
+        limit: 
+        precision: 6
+        scale: 
+      type_metadata: *78
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &216 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: last_updated_by
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &79 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *79
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &217 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: last_update_date
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &80 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: TIMESTAMP(6)
+        type: :datetime
+        limit: 
+        precision: 6
+        scale: 
+      type_metadata: *80
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &218 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: last_update_login
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &81 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *81
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  cust_ora_cklist_log_headers_t:
+  - &219 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: cklist_log_header_id
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &82 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *82
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &220 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: area_id
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &83 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *83
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &221 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: shift
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &84 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: VARCHAR2(25)
+        type: :string
+        limit: 25
+        precision: 
+        scale: 
+      type_metadata: *84
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &222 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: comments
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &85 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: VARCHAR2(2000)
+        type: :string
+        limit: 2000
+        precision: 
+        scale: 
+      type_metadata: *85
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &223 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: comments_01
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &86 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: VARCHAR2(2000)
+        type: :string
+        limit: 2000
+        precision: 
+        scale: 
+      type_metadata: *86
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &224 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: checklist_required
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &87 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(1)
+        type: :boolean
+        limit: 
+        precision: 
+        scale: 
+      type_metadata: *87
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &225 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: checklist_date
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &88 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: TIMESTAMP(6)
+        type: :datetime
+        limit: 
+        precision: 6
+        scale: 
+      type_metadata: *88
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &226 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: latitude
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &89 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER
+        type: :decimal
+        limit: 
+        precision: 
+        scale: 
+      type_metadata: *89
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &227 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: longitude
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &90 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER
+        type: :decimal
+        limit: 
+        precision: 
+        scale: 
+      type_metadata: *90
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &228 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: created_by
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &91 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *91
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &229 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: creation_date
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &92 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: TIMESTAMP(6)
+        type: :datetime
+        limit: 
+        precision: 6
+        scale: 
+      type_metadata: *92
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &230 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: last_updated_by
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &93 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *93
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &231 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: last_update_date
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &94 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: TIMESTAMP(6)
+        type: :datetime
+        limit: 
+        precision: 6
+        scale: 
+      type_metadata: *94
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &232 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: last_update_login
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &95 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *95
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  cust_ora_locations_t:
+  - &233 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: location_id
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &96 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *96
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &234 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: location_name
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &97 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: VARCHAR2(25)
+        type: :string
+        limit: 25
+        precision: 
+        scale: 
+      type_metadata: *97
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &235 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: location_description
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &98 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: VARCHAR2(255)
+        type: :string
+        limit: 255
+        precision: 
+        scale: 
+      type_metadata: *98
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &236 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: created_by
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &99 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *99
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &237 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: creation_date
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &100 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: TIMESTAMP(6)
+        type: :datetime
+        limit: 
+        precision: 6
+        scale: 
+      type_metadata: *100
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &238 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: last_updated_by
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &101 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *101
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &239 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: last_update_date
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &102 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: TIMESTAMP(6)
+        type: :datetime
+        limit: 
+        precision: 6
+        scale: 
+      type_metadata: *102
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &240 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: last_update_login
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &103 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *103
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &241 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: end_date
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &104 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: TIMESTAMP(6)
+        type: :datetime
+        limit: 
+        precision: 6
+        scale: 
+      type_metadata: *104
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  cust_ora_nfc_tags_t:
+  - &242 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: nfc_tag_id
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &105 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *105
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &243 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: area_id
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &106 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *106
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &244 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: nfc_tag_value
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &107 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: VARCHAR2(100)
+        type: :string
+        limit: 100
+        precision: 
+        scale: 
+      type_metadata: *107
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &245 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: nfc_tag_expiry
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &108 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: TIMESTAMP(6)
+        type: :datetime
+        limit: 
+        precision: 6
+        scale: 
+      type_metadata: *108
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &246 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: nfc_tag_type
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &109 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *109
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &247 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: remarks
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &110 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: VARCHAR2(255)
+        type: :string
+        limit: 255
+        precision: 
+        scale: 
+      type_metadata: *110
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &248 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: created_by
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &111 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *111
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &249 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: creation_date
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &112 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: TIMESTAMP(6)
+        type: :datetime
+        limit: 
+        precision: 6
+        scale: 
+      type_metadata: *112
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &250 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: last_updated_by
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &113 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *113
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &251 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: last_update_date
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &114 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: TIMESTAMP(6)
+        type: :datetime
+        limit: 
+        precision: 6
+        scale: 
+      type_metadata: *114
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &252 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: last_update_login
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &115 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *115
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &253 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: end_date
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &116 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: TIMESTAMP(6)
+        type: :datetime
+        limit: 
+        precision: 6
+        scale: 
+      type_metadata: *116
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  cust_ora_plants_t:
+  - &254 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: plant_id
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &117 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *117
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &255 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: location_id
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &118 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *118
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &256 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: plant_name
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &119 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: VARCHAR2(25)
+        type: :string
+        limit: 25
+        precision: 
+        scale: 
+      type_metadata: *119
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &257 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: created_by
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &120 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *120
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &258 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: creation_date
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &121 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: TIMESTAMP(6)
+        type: :datetime
+        limit: 
+        precision: 6
+        scale: 
+      type_metadata: *121
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &259 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: last_updated_by
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &122 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *122
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &260 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: last_update_date
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &123 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: TIMESTAMP(6)
+        type: :datetime
+        limit: 
+        precision: 6
+        scale: 
+      type_metadata: *123
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &261 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: last_update_login
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &124 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *124
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &262 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: end_date
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &125 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: TIMESTAMP(6)
+        type: :datetime
+        limit: 
+        precision: 6
+        scale: 
+      type_metadata: *125
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  cust_ora_users_t:
+  - &263 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: user_id
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &126 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *126
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &264 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: user_name
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &127 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: VARCHAR2(25)
+        type: :string
+        limit: 25
+        precision: 
+        scale: 
+      type_metadata: *127
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &265 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: user_pin
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &128 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *128
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &266 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: location_id
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &129 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *129
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &267 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: plant_id
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &130 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *130
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &268 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: created_by
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &131 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *131
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &269 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: creation_date
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &132 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: TIMESTAMP(6)
+        type: :datetime
+        limit: 
+        precision: 6
+        scale: 
+      type_metadata: *132
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &270 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: last_updated_by
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &133 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *133
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &271 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: last_update_date
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &134 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: TIMESTAMP(6)
+        type: :datetime
+        limit: 
+        precision: 6
+        scale: 
+      type_metadata: *134
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &272 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: last_update_login
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &135 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: NUMBER(38)
+        type: :integer
+        limit: 38
+        precision: 38
+        scale: 
+      type_metadata: *135
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &273 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: end_date
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &136 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: TIMESTAMP(6)
+        type: :datetime
+        limit: 
+        precision: 6
+        scale: 
+      type_metadata: *136
+      virtual: false
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  schema_migrations:
+  - &274 !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::Column
+    name: version
+    sql_type_metadata: !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::TypeMetadata
+      delegate_dc_obj: &137 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+        sql_type: VARCHAR2(255)
+        type: :string
+        limit: 255
+        precision: 
+        scale: 
+      type_metadata: *137
+      virtual: false
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+columns_hash:
+  ar_internal_metadata:
+    key: *138
+    value: *139
+    created_at: *140
+    updated_at: *141
+  cust_ora_areas_t:
+    area_id: *142
+    plant_id: *143
+    area_name: *144
+    parent_area_id: *145
+    created_by: *146
+    creation_date: *147
+    last_updated_by: *148
+    last_update_date: *149
+    last_update_login: *150
+    end_date: *151
+  cust_ora_asset_log_details_t:
+    log_id: *152
+    log_header_id: *153
+    asset_id: *154
+    current_value: *155
+    mwr_required: *156
+    mwr_justification: *157
+    remarks: *158
+    created_by: *159
+    creation_date: *160
+    last_updated_by: *161
+    last_update_date: *162
+    last_update_login: *163
+  cust_ora_asset_log_headers_t:
+    log_header_id: *164
+    area_id: *165
+    shift: *166
+    comments: *167
+    comments_01: *168
+    log_required: *169
+    log_date: *170
+    latitude: *171
+    longitude: *172
+    created_by: *173
+    creation_date: *174
+    last_updated_by: *175
+    last_update_date: *176
+    last_update_login: *177
+  cust_ora_assets_t:
+    asset_id: *178
+    area_id: *179
+    seq_number: *180
+    eam_asset_number: *181
+    asset_tag: *182
+    asset_description: *183
+    min_value: *184
+    max_value: *185
+    unit_of_measure: *186
+    is_boolean: *187
+    remarks: *188
+    created_by: *189
+    creation_date: *190
+    last_updated_by: *191
+    last_update_date: *192
+    last_update_login: *193
+    end_date: *194
+  cust_ora_checklists_t:
+    checklist_id: *195
+    area_id: *196
+    seq_number: *197
+    check_list_description: *198
+    min_value: *199
+    max_value: *200
+    unit_of_measure: *201
+    is_boolean: *202
+    remarks: *203
+    created_by: *204
+    creation_date: *205
+    last_updated_by: *206
+    last_update_date: *207
+    last_update_login: *208
+    end_date: *209
+  cust_ora_cklist_log_details_t:
+    cklist_log_id: *210
+    cklist_log_header_id: *211
+    checklist_id: *212
+    current_value: *213
+    created_by: *214
+    creation_date: *215
+    last_updated_by: *216
+    last_update_date: *217
+    last_update_login: *218
+  cust_ora_cklist_log_headers_t:
+    cklist_log_header_id: *219
+    area_id: *220
+    shift: *221
+    comments: *222
+    comments_01: *223
+    checklist_required: *224
+    checklist_date: *225
+    latitude: *226
+    longitude: *227
+    created_by: *228
+    creation_date: *229
+    last_updated_by: *230
+    last_update_date: *231
+    last_update_login: *232
+  cust_ora_locations_t:
+    location_id: *233
+    location_name: *234
+    location_description: *235
+    created_by: *236
+    creation_date: *237
+    last_updated_by: *238
+    last_update_date: *239
+    last_update_login: *240
+    end_date: *241
+  cust_ora_nfc_tags_t:
+    nfc_tag_id: *242
+    area_id: *243
+    nfc_tag_value: *244
+    nfc_tag_expiry: *245
+    nfc_tag_type: *246
+    remarks: *247
+    created_by: *248
+    creation_date: *249
+    last_updated_by: *250
+    last_update_date: *251
+    last_update_login: *252
+    end_date: *253
+  cust_ora_plants_t:
+    plant_id: *254
+    location_id: *255
+    plant_name: *256
+    created_by: *257
+    creation_date: *258
+    last_updated_by: *259
+    last_update_date: *260
+    last_update_login: *261
+    end_date: *262
+  cust_ora_users_t:
+    user_id: *263
+    user_name: *264
+    user_pin: *265
+    location_id: *266
+    plant_id: *267
+    created_by: *268
+    creation_date: *269
+    last_updated_by: *270
+    last_update_date: *271
+    last_update_login: *272
+    end_date: *273
+  schema_migrations:
+    version: *274
+primary_keys:
+  ar_internal_metadata: key
+  cust_ora_areas_t: area_id
+  cust_ora_asset_log_details_t: log_id
+  cust_ora_asset_log_headers_t: log_header_id
+  cust_ora_assets_t: asset_id
+  cust_ora_checklists_t: checklist_id
+  cust_ora_cklist_log_details_t: cklist_log_id
+  cust_ora_cklist_log_headers_t: cklist_log_header_id
+  cust_ora_locations_t: location_id
+  cust_ora_nfc_tags_t: nfc_tag_id
+  cust_ora_plants_t: plant_id
+  cust_ora_users_t: user_id
+  schema_migrations: version
+data_sources:
+  ar_internal_metadata: true
+  cust_ora_areas_t: true
+  cust_ora_asset_log_details_t: true
+  cust_ora_asset_log_headers_t: true
+  cust_ora_assets_t: true
+  cust_ora_checklists_t: true
+  cust_ora_cklist_log_details_t: true
+  cust_ora_cklist_log_headers_t: true
+  cust_ora_locations_t: true
+  cust_ora_nfc_tags_t: true
+  cust_ora_plants_t: true
+  cust_ora_users_t: true
+  schema_migrations: true
+indexes:
+  ar_internal_metadata: []
+  cust_ora_areas_t:
+  - !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::IndexDefinition
+    parameters: 
+    statement_parameters: 
+    tablespace: 
+    table: cust_ora_areas_t
+    name: ie1c7b977be245a62a275ec5df3cc6
+    unique: true
+    columns:
+    - plant_id
+    - area_name
+    - parent_area_id
+    lengths: {}
+    orders: {}
+    opclasses: {}
+    where: 
+    type: 
+    using: 
+    comment: 
+  cust_ora_asset_log_details_t:
+  - !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::IndexDefinition
+    parameters: 
+    statement_parameters: 
+    tablespace: 
+    table: cust_ora_asset_log_details_t
+    name: ic09a56f08e0841e4987c47bd517d7
+    unique: false
+    columns:
+    - asset_id
+    - current_value
+    lengths: {}
+    orders: {}
+    opclasses: {}
+    where: 
+    type: 
+    using: 
+    comment: 
+  cust_ora_asset_log_headers_t:
+  - !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::IndexDefinition
+    parameters: 
+    statement_parameters: 
+    tablespace: 
+    table: cust_ora_asset_log_headers_t
+    name: if9a03b0477ff7aa092a0065fc7cf2
+    unique: false
+    columns:
+    - area_id
+    - shift
+    - log_date
+    lengths: {}
+    orders: {}
+    opclasses: {}
+    where: 
+    type: 
+    using: 
+    comment: 
+  cust_ora_assets_t:
+  - !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::IndexDefinition
+    parameters: 
+    statement_parameters: 
+    tablespace: 
+    table: cust_ora_assets_t
+    name: i335b24f7079b989eb0d12bd1aab06
+    unique: true
+    columns:
+    - area_id
+    - eam_asset_number
+    - asset_tag
+    - unit_of_measure
+    lengths: {}
+    orders: {}
+    opclasses: {}
+    where: 
+    type: 
+    using: 
+    comment: 
+  cust_ora_checklists_t:
+  - !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::IndexDefinition
+    parameters: 
+    statement_parameters: 
+    tablespace: 
+    table: cust_ora_checklists_t
+    name: i9d762d97e9d2363d0ebde113fb9b4
+    unique: true
+    columns:
+    - area_id
+    - check_list_description
+    - unit_of_measure
+    lengths: {}
+    orders: {}
+    opclasses: {}
+    where: 
+    type: 
+    using: 
+    comment: 
+  cust_ora_cklist_log_details_t:
+  - !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::IndexDefinition
+    parameters: 
+    statement_parameters: 
+    tablespace: 
+    table: cust_ora_cklist_log_details_t
+    name: i126f74adcaea095a4095109a7f25c
+    unique: false
+    columns:
+    - checklist_id
+    - current_value
+    lengths: {}
+    orders: {}
+    opclasses: {}
+    where: 
+    type: 
+    using: 
+    comment: 
+  cust_ora_cklist_log_headers_t:
+  - !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::IndexDefinition
+    parameters: 
+    statement_parameters: 
+    tablespace: 
+    table: cust_ora_cklist_log_headers_t
+    name: if76e57b886e9def14fe42d280ead9
+    unique: false
+    columns:
+    - area_id
+    - shift
+    - checklist_date
+    lengths: {}
+    orders: {}
+    opclasses: {}
+    where: 
+    type: 
+    using: 
+    comment: 
+  cust_ora_locations_t:
+  - !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::IndexDefinition
+    parameters: 
+    statement_parameters: 
+    tablespace: 
+    table: cust_ora_locations_t
+    name: i_cus_ora_loc_t_loc_nam
+    unique: true
+    columns:
+    - location_name
+    lengths: {}
+    orders: {}
+    opclasses: {}
+    where: 
+    type: 
+    using: 
+    comment: 
+  cust_ora_nfc_tags_t:
+  - !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::IndexDefinition
+    parameters: 
+    statement_parameters: 
+    tablespace: 
+    table: cust_ora_nfc_tags_t
+    name: i434aeb8309efcab005873c87fe869
+    unique: true
+    columns:
+    - area_id
+    - nfc_tag_value
+    - nfc_tag_type
+    lengths: {}
+    orders: {}
+    opclasses: {}
+    where: 
+    type: 
+    using: 
+    comment: 
+  cust_ora_plants_t:
+  - !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::IndexDefinition
+    parameters: 
+    statement_parameters: 
+    tablespace: 
+    table: cust_ora_plants_t
+    name: i_cus_ora_pla_t_loc_id_pla_nam
+    unique: true
+    columns:
+    - location_id
+    - plant_name
+    lengths: {}
+    orders: {}
+    opclasses: {}
+    where: 
+    type: 
+    using: 
+    comment: 
+  cust_ora_users_t:
+  - !ruby/object:ActiveRecord::ConnectionAdapters::OracleEnhanced::IndexDefinition
+    parameters: 
+    statement_parameters: 
+    tablespace: 
+    table: cust_ora_users_t
+    name: i_cus_ora_use_t_use_nam_loc_id
+    unique: true
+    columns:
+    - user_name
+    - location_id
+    lengths: {}
+    orders: {}
+    opclasses: {}
+    where: 
+    type: 
+    using: 
+    comment: 
+  schema_migrations: []
+version: 20190917113348
+database_version:
+- 12
+- 1

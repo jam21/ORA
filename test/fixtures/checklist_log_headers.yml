@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  area_id: 1
+  shift: MyString
+  comments: MyString
+  checklist_required: false
+  checklist_date: 2019-09-17 16:18:02
+  latitude: 1
+  longitude: 1
+  created_by: 1
+  creation_date: 2019-09-17 16:18:02
+  last_updated_by: 1
+  last_update_date: 2019-09-17 16:18:02
+  last_update_login: 1
+
+two:
+  area_id: 1
+  shift: MyString
+  comments: MyString
+  checklist_required: false
+  checklist_date: 2019-09-17 16:18:02
+  latitude: 1
+  longitude: 1
+  created_by: 1
+  creation_date: 2019-09-17 16:18:02
+  last_updated_by: 1
+  last_update_date: 2019-09-17 16:18:02
+  last_update_login: 1

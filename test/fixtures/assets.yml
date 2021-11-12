@@ -1,0 +1,35 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  asset_id: 1
+  area_id: 1
+  seq_number: 1
+  eam_asset_id: 1
+  asset_tag: MyString
+  asset_description: MyString
+  min_value: 1
+  max_value: 1
+  unit_of_measure: MyString
+  cerated_by: 1
+  creation_date: 2019-09-04 12:19:51
+  last_updated_by: 1
+  last_update_date: 2019-09-04 12:19:51
+  last_sync_date: 2019-09-04 12:19:51
+  end_date: 2019-09-04 12:19:51
+
+two:
+  asset_id: 1
+  area_id: 1
+  seq_number: 1
+  eam_asset_id: 1
+  asset_tag: MyString
+  asset_description: MyString
+  min_value: 1
+  max_value: 1
+  unit_of_measure: MyString
+  cerated_by: 1
+  creation_date: 2019-09-04 12:19:51
+  last_updated_by: 1
+  last_update_date: 2019-09-04 12:19:51
+  last_sync_date: 2019-09-04 12:19:51
+  end_date: 2019-09-04 12:19:51

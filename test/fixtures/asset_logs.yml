@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  asset_id: 1
+  current_value: 9.99
+  mwr_required: false
+  mwr_justification: MyString
+  latitude: 9.99
+  longitude: 9.99
+  cerated_by: 1
+  creation_date: 2019-09-04 12:57:09
+  last_updated_by: 1
+  last_update_date: 2019-09-04 12:57:09
+
+two:
+  id: 1
+  asset_id: 1
+  current_value: 9.99
+  mwr_required: false
+  mwr_justification: MyString
+  latitude: 9.99
+  longitude: 9.99
+  cerated_by: 1
+  creation_date: 2019-09-04 12:57:09
+  last_updated_by: 1
+  last_update_date: 2019-09-04 12:57:09
